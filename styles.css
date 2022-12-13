@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .card {
+    width: 80%;
+    max-width: 700px;
+  }
+  .card-body {
+    padding: 40px;
+  }
+  .quote {
+    border: 3px solid rgb(160, 160, 160);
+    max-width: 500px;
+    border-radius: 2px;
+  }
+  .quote-footer {
+    border: 3px solid rgb(160, 160, 160);
+    border-top: none;
+    max-width: 500px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 2px;
+  }
+  #quote-button {
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(133, 176, 255);
+  }
+  
