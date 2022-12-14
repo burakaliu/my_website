@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const quote = document.getElementById("quote");
     const button = document.getElementById("quote-button");
     const cite = document.getElementById("quote-cite");
+    const footer = document.getElementById("quote-author");
   
     async function updateQuote() {
       // Fetch a random quote from the Quotable API
@@ -12,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         // Update DOM elements
         quote.textContent = data.content;
-        cite.textContent = data.author;
+        //cite.textContent = data.author;
+        footer.textContent = ("- " + data.author);
       } else {
         quote.textContent = "An error occured";
         console.log(data);
