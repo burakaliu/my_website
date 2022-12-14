@@ -22,27 +22,47 @@ body {
     transform: scale(1.1);
   }
   img{
-    width: 100px;
-    height: auto;
+    width: 80%;
   }
-  .github{
-    display:flex;
+  #logo{
+    transform: rotate(-45deg);
   }
   .cube{
-    flex: none;
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
     background-color: #F2E5E5;
-    transform: rotateX(45deg);
+    transition: all .2s ease-in-out; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
   }
   .cube:hover{
-    transform: scale(1.1);
-    transform: rotateX(10deg) ;
+    transform: scale(1.1) rotate(45deg);
+  }
+  .cube:hover > *{
+    transform: scale(0.9) rotate(45deg);
   }
   .navigation{
-    display: flex;
-    flex-direction: row;
-    flex: 1, 1, 1;
+  }
+  #parallax {
+    /* The image used */
+    background-image: url("resources/sinking.jpg") !important;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #parallax:hover {
+    background-size: 99%;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   .quote {
     border: 3px solid rgb(160, 160, 160);
@@ -51,7 +71,6 @@ body {
     border-top-right-radius: 10px;
   }
   .container{
-    flex: 1;
   }
   .quote{
     background-color: white;
